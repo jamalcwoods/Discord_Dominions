@@ -1,4 +1,6 @@
 The following are instructions on how to properly add this discord bot to a server and utilize it.
+NOTE: Node.js will be needed on the computer in order to run this bot.
+
 
 1. 
 
@@ -6,14 +8,18 @@ The following are instructions on how to properly add this discord bot to a serv
 
 2.
 
+- Node modules will be needed to have the bot function properly. In this folder, on a command line, do "npm install"
+
+3.
+
 - Now run the run.bat file to start the bot. It should print a message in the console: Starting Dominions v0.0.1 ... on shard #1
 
-3. 
+4. 
 
 - You need to add the bot to a server you are the owner of by going to the following link: https://discord.com/oauth2/authorize?client_id=549465399020879874&scope=bot&permissions=8
 
 
-4.
+5.
 
 - Once the bot has been added to a server you can do the commands:
 
