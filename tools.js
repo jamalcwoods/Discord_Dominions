@@ -297,6 +297,7 @@ module.exports = {
                 })
             })
         } else {
+            console.log(channel)
             channel.send("",embed)
         }   
     },

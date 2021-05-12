@@ -249,19 +249,3 @@ client.on('message', message => {
         })
 	})
 })
-
-client.on('guildCreate', guild => {
-    var embed = new Discord.MessageEmbed();
-    embed.addField("Welcome to Discord Dominions!","Please have the owner of this server do the command '+claim' in the in the channel that will be used for this bots functions.")
-    var sent = false;
-    var i = 0;
-    guild.fetchMember(client.user).then(member => {
-        while(!sent){   
-            if(guild.channels.array()[i].permissionsFor(member).has("SEND_MESSAGES") && guild.channels.array()[i].sendEmbed != undefined){
-                tools.outputEmbed(guild.channels.array()[i],embed) 
-                sent = true
-            }
-            i++
-        }
-    })
-})
